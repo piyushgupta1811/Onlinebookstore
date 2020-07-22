@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+body{
+    font-family: 'Yellowtail', cursive;
+}
+
+/* Navigation Bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    
+
+}
+
+/* Navigation Bar: Logo and Image */
+
+#logo{
+    margin: 10px 10px;
+
+}
+
+#logo img{
+    height: 100px;
+   
+
+
+}
+
+/* Navigation Bar: List Styling */
+ 
+#navbar ul{
+    display: flex;
+    
+
+}
+#navbar ul li{
+    list-style: none;
+   
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    border-radius:10px ;
+    cursor: pointer;
+    color: white;
+    /* transition: all 0.3s; */
+    padding: 10px 25px;
+    
+}
+
+#navbar ul li a:hover{
+
+    background-color: white;
+    border: 2px solid black;
+    color:rgb(197, 96, 13) ;
+    font-size: 25px;
+    
+
+}
+#login .btn{
+    position: absolute;
+    top: 22px;
+    right: 80px;
+
+}
+#login img{
+    position: absolute;
+    top: 42px;
+    right: 188px;
+    height: 30px;
+    width: 34px;
+    border-radius: 16px;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 409px;
+    /* display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+#home::before{
+    content: "";
+    background: url('../home.jpg') no-repeat center center/cover;;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 540px;
+    
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+
+#home .btn{
+    color: rgb(197, 96, 13);
+    border: 2px solid rgb(197, 96, 13);
+    /* margin: 10px 590px; */
+    margin: auto;
+    margin-top: 15px;
+}
+
+#home h2{
+    font-size: 5.8rem ;
+    margin:20px;
+   
+    color: rgb(205, 168, 208);
+    display: block;
+    text-shadow: 5px 5px 5px #cc451d;
+} 
+
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
+#services-container h1{
+    margin: 0px 200px;
+    padding: 21px 66px;
+    font-size: 4.4rem;
+    text-align: center;
+}
+
+#services{
+    display: flex;
+   
+}
+
+#services .box{
+    border: 2px solid brown;
+    border-radius: 23px;
+    margin: 20px 49px;
+    padding: 20px 20px;
+    text-align: justify;
+   
+    
+}
+
+#services h2{
+    color: brown;
+    text-align: center;
+} 
+
+
+#services .box img{ 
+    height: auto;
+    width: 279px;
+    margin: auto;
+    display: block;
+ }
+ 
+
+
+#Books-section{
+    position: relative;
+}
+#Books-section::before{
+
+    content: "";
+    background: url('../Books-section.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    
+    width: 100%;
+    z-index: -1;
+    opacity:1.9;
+}
+
+#Books-section h1{
+    
+    padding: 21px 66px;
+    font-size: 5.4rem;
+    margin-bottom: -6px;
+    color: #c661c3;
+    text-shadow: 2px 2px white;
+    text-align: center;
+
+}
+
+#Books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+#Books .Book-item {
+    margin: 12px 55px;
+    padding: 10px 10px;
+}
+
+#Books img{
+    border-radius: 20px;
+    border: 2px solid white;
+    
+}
+
+#book2 ,#book4 {
+    position: relative;
+    top: 25px;
+    z-index: -1;
+} 
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../cont.jpg') no-repeat center center/cover;}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   
+}
+
+
+
+
+#contact h1{
+   
+    padding: 21px 66px;
+    font-size: 4.4rem;
+    margin-bottom: -6px;
+    color: #c661c3;
+    text-shadow: 2px 2px white;
+    text-align: center;
+
+} 
+#contact-box .form-group input{
+    
+    border: 2px solid #c597ca;
+    border-radius: 10px;
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+   
+    text-align: center; 
+}
+
+/* utility classes */
+.btn{
+    border-radius: 5px;
+    border: 2px solid rgb(16, 113, 240);
+    height: 30px;
+    width: 80px;
+    color: rgb(16, 113, 240);
+    cursor: pointer;
+    margin: 20px;
+
+
+}

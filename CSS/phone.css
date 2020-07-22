@@ -1,0 +1,107 @@
+body{
+    background-color: turquoise;
+}
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
+
+#login .btn {
+    
+    top: 2px;
+    right: -6px;
+    width: 57px;
+}
+
+#login img {
+   
+    top: 22px;
+    right: 80px;
+    height: 30px;
+    width: 27px;
+    
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+#home h2{
+    font-size: 2.8rem;
+}
+/* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+#services .box {
+    padding: 9px;
+    margin: 2px 85px;
+    margin-bottom: 20px;
+}
+#services .box img {
+    /* height: 160px; */
+    width: 131px;
+    
+}
+
+
+#services-container h1 {
+    margin: 0px; 
+    padding: 11px 66px;
+    font-size: 2.4rem;
+    
+}
+#Books img{
+    width: 66px;
+   
+    height: auto;
+    
+}
+/* Clients section */
+#Books{
+    flex-wrap: wrap;
+}
+
+
+#Books-section h1{
+    font-size: 2.4rem;
+}
+
+#Books .Book-item {
+    margin: 12px 23px;
+}
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+
+#contact h1{
+    font-size: 2.4rem;
+}
+
+/* Footer */
+
+/* Utility classes */
+
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
